@@ -1,11 +1,54 @@
-﻿#map {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
+﻿body
+{
+	background: burlywood;
 }
 
-#image {
-	max-height: 100px;
+header
+{
+	background: green;
+	text-align: center;
+	padding: 0.5em;
+	margin: 1em;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 2em;
+	margin: 1em;
+}
+
+a:hover
+{
+	color: gainsboro;
+}
+
+article {
+	margin-top: 5%;
+}
+
+h1 {
+	color: green;
+	font-size: 2em
+}
+
+footer {
+	background-color: green;
+	color: white;
+	padding: 1%;
+	margin: 1em;
+}
+
+#content
+{
+	padding-left: 17%;
+	padding-right: 17%;
+}
+
+.tile
+{
+	text-align: center;
+	background: white;
+	padding: 4%;
+	margin-bottom: 5%;
 }
