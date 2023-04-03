@@ -1,24 +1,14 @@
 ﻿body
 {
 	background: burlywood;
-	padding-left: 17%;
-	padding-right: 17%;
 }
 
 header
 {
 	background: green;
 	text-align: center;
-
-
-
-	/*text-align: center;
-	background: green;
 	padding: 0.5em;
-	position: fixed;
-	width: 100%;
-	left: 0;
-	top: 0;*/
+	margin: 1em;
 }
 
 a {
@@ -28,23 +18,37 @@ a {
 	margin: 1em;
 }
 
+a:hover
+{
+	color: gainsboro;
+}
+
 article {
+	margin-top: 5%;
+}
+
+h1 {
+	color: green;
+	font-size: 2em
+}
+
+footer {
+	background-color: green;
+	color: white;
+	padding: 1%;
+	margin: 1em;
+}
+
+#content
+{
+	padding-left: 17%;
+	padding-right: 17%;
+}
+
+.tile
+{
+	text-align: center;
 	background: white;
-	margin-top: 10%;
-}
-
-@media only screen and (max-width: 950px)
-{
-	article
-	{
-		margin-top: 20%;
-	}
-}
-
-@media only screen and (max-width: 770px)
-{
-	article
-	{
-		margin-top: 30%;
-	}
+	padding: 4%;
+	margin-bottom: 5%;
 }
