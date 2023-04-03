@@ -1,0 +1,50 @@
+﻿body
+{
+	background: burlywood;
+	padding-left: 17%;
+	padding-right: 17%;
+}
+
+header
+{
+	background: green;
+	text-align: center;
+
+
+
+	/*text-align: center;
+	background: green;
+	padding: 0.5em;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;*/
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 2em;
+	margin: 1em;
+}
+
+article {
+	background: white;
+	margin-top: 10%;
+}
+
+@media only screen and (max-width: 950px)
+{
+	article
+	{
+		margin-top: 20%;
+	}
+}
+
+@media only screen and (max-width: 770px)
+{
+	article
+	{
+		margin-top: 30%;
+	}
+}
