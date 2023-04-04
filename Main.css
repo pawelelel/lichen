@@ -50,6 +50,7 @@ footer {
 {
 	text-align: center;
 	background: white;
+	visibility: hidden;
 	padding: 4%;
 	margin-bottom: 5%;
 }
