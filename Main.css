@@ -6,6 +6,8 @@
 
 header
 {
+	position: sticky;
+	top: 10px;
 	background: green;
 	text-align: center;
 	padding: 0.5em;
@@ -40,8 +42,12 @@ footer {
 	margin: 1em;
 }
 
-#content
+footer > a
 {
+	font-size: 1em;
+}
+
+#content {
 	padding-left: 17%;
 	padding-right: 17%;
 }
@@ -53,6 +59,7 @@ footer {
 	visibility: hidden;
 	padding: 4%;
 	margin-bottom: 5%;
+	border-radius: 10px;
 }
 
 #topBtn
@@ -73,4 +80,18 @@ footer {
 #topBtn:hover
 {
 	color: gainsboro;
+}
+
+
+@keyframes show
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		background-color: yellow;
+	}
 }

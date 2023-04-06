@@ -15,27 +15,43 @@ function goToTop() {
     document.documentElement.scrollTop = 0;
 }
 
-document.documentElement.scrollTop = 1;
 
-let us = document.getElementById("usTile");
-let usTop = us.getBoundingClientRect().top;
+var scrollU = function scrollUs() {
+    var us = document.getElementById("usTile");
 
-let project = document.getElementById("projectTile");
-let projectTop = project.getBoundingClientRect().top;
+    var rect = us.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
 
-//let mosses = document.getElementById("mossesTile");
-//let mossesTop = mosses.getBoundingClientRect().top;
+    isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    console.log("u" + isVisible);
+    return isVisible;
+}
 
-var scroll = function() {
-  var y = document.documentElement.scrollTop;
-  console.log("y " + y)
-  console.log("pt " + projectTop)
-  if (y < projectTop) {
-    project.style.visibility = "visible";
-  }
-  if (y < usTop + 50) {
-    us.style.visibility = "visible";
-  }
-};
+var scrollP = function scrollProject() {
+    var project = document.getElementById("projectTile");
 
-window.addEventListener("scroll", scroll);
+    var rect = project.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    console.log("p" + isVisible);
+    return isVisible;
+}
+
+var scrollM = function scrollMosses() {
+    var mosses = document.getElementById("mossesTile");
+
+    var rect = mosses.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    console.log("m" + isVisible);
+    return isVisible;
+}
+
+window.addEventListener("scroll", scrollU);
+window.addEventListener("scroll", scrollP);
+window.addEventListener("scroll", scrollM);
