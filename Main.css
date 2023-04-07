@@ -3,7 +3,7 @@
 html, body
 {
 	font-family: 'Lato';
-	background: burlywood;
+	background: rgb(229, 217, 182);
 	scroll-behavior: smooth;
 	line-height: 1.6;
 }
@@ -12,7 +12,7 @@ header
 {
 	position: sticky;
 	top: 10px;
-	background: green;
+	background: rgb(40, 84, 48);
 	text-align: center;
 	padding: 0.5em;
 	margin: 1em;
@@ -35,13 +35,15 @@ article {
 	margin-top: 5%;
 }
 
-h1 {
-	color: green;
+h1
+{
+	color: rgb(40, 84, 48);
 	font-size: 2em
 }
 
-footer {
-	background-color: green;
+footer
+{
+	background-color: rgb(40, 84, 48);
 	color: white;
 	padding: 1%;
 	margin: 1em;
@@ -99,14 +101,14 @@ img {
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
-	background-color: green;
+	background-color: rgb(40, 84, 48);
 	padding: 10px 20px 10px 20px;
 	text-align: center;
 	color: white;
 	cursor: pointer;
 	border-radius: 10px;
 	font-size: 2em;
-	border: 1px solid burlywood;
+	border: 1px solid rgb(229, 217, 182);
 }
 
 #topBtn:hover
