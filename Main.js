@@ -28,16 +28,13 @@ var scrollU = function scrollUs() {
     
     if (isVisible != uVisible)
     {
-        var link = document.getElementById("usLink");
         if (isVisible === true)
         {
             us.classList.add("anim");
-            link.classList.add("selected");
         }
         else
         {
             us.classList.remove("anim");
-            link.classList.remove("selected");
         }
         uVisible = isVisible;
     }
@@ -58,16 +55,13 @@ var scrollP = function scrollProject() {
 
     if (isVisible != pVisible)
     {
-        var link = document.getElementById("projectLink");
         if (isVisible === true)
         {
             project.classList.add("anim");
-            link.classList.add("selected");
         }
         else
         {
             project.classList.remove("anim");
-            link.classList.remove("selected");
         }
         pVisible = isVisible;
     }
@@ -88,16 +82,13 @@ var scrollM = function scrollMosses() {
 
     if (isVisible != mVisible)
     {
-        var link = document.getElementById("mossesLink");
         if (isVisible === true)
         {
             mosses.classList.add("anim");
-            link.classList.add("selected");
         }
         else
         {
             mosses.classList.remove("anim");
-            link.classList.remove("selected");
         }
         mVisible = isVisible;
     }
@@ -108,3 +99,53 @@ var scrollM = function scrollMosses() {
 window.addEventListener("scroll", scrollU);
 window.addEventListener("scroll", scrollP);
 window.addEventListener("scroll", scrollM);
+
+
+var percentScroll = function percentScroll(element) {
+    const elementBounds = element.getBoundingClientRect();
+    const viewportHeight = window.innerHeight;
+
+    const visibleHeight = Math.min(elementBounds.bottom, viewportHeight) - Math.max(elementBounds.top, 0);
+
+    const percentVisible = visibleHeight / elementBounds.height * 100;
+
+    return percentVisible;
+}
+
+var selectedScroll = function selectedScroll()
+{
+    var link = document.getElementById("projectLink");
+    link.classList.remove("selected");
+    link = document.getElementById("usLink");
+    link.classList.remove("selected");
+    link = document.getElementById("mossesLink");
+    link.classList.remove("selected");
+
+
+
+    var project = percentScroll(document.getElementById('projectTile'));
+    var us = percentScroll(document.getElementById('usTile'));
+    var mosses = percentScroll(document.getElementById('mossesTile'));
+
+    var max = Math.max(project, us, mosses);
+
+    if (project === max)
+    {
+        link = document.getElementById("projectLink");
+        link.classList.add("selected");
+    }
+    if (us === max)
+    {
+        link = document.getElementById("usLink");
+        link.classList.add("selected");
+    }
+    if (mosses === max)
+    {
+        link = document.getElementById("mossesLink");
+        link.classList.add("selected");
+    }
+}
+window.addEventListener("scroll", selectedScroll);
+
+//const element = document.getElementById('projectTile');
+//window.addEventListener("scroll", (evt) => percentScroll(element));

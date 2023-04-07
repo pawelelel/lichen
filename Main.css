@@ -53,11 +53,26 @@ footer > a
 	padding-right: 17%;
 }
 
+img {
+	width: 100%;
+}
+
+.description {
+	text-align: left;
+	margin-left: 15px;
+}
+
+#moss1 {
+}
+
+#moss2 {
+	
+}
+
 .tile
 {
 	text-align: center;
 	background: white;
-	/*visibility: hidden;*/
 	padding: 4%;
 	margin-bottom: 5%;
 	border-radius: 10px;
