@@ -1,14 +1,22 @@
-﻿body
+﻿@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html, body
 {
-	background: burlywood;
+	font-family: 'Lato';
+	background: rgb(229, 217, 182);
+	scroll-behavior: smooth;
+	line-height: 1.6;
 }
 
 header
 {
-	background: green;
+	position: sticky;
+	top: 10px;
+	background: rgb(40, 84, 48);
 	text-align: center;
 	padding: 0.5em;
 	margin: 1em;
+	z-index: 100;
 }
 
 a {
@@ -27,22 +35,45 @@ article {
 	margin-top: 5%;
 }
 
-h1 {
-	color: green;
+h1
+{
+	color: rgb(40, 84, 48);
 	font-size: 2em
 }
 
-footer {
-	background-color: green;
+footer
+{
+	background-color: rgb(40, 84, 48);
 	color: white;
 	padding: 1%;
 	margin: 1em;
 }
 
-#content
+footer > a
 {
+	font-size: 1em;
+}
+
+#content {
 	padding-left: 17%;
 	padding-right: 17%;
+}
+
+img {
+	width: 100%;
+}
+
+.description {
+	text-align: left;
+	margin-left: 15px;
+	font-weight: normal;
+}
+
+#moss1 {
+}
+
+#moss2 {
+	
 }
 
 .tile
@@ -51,4 +82,63 @@ footer {
 	background: white;
 	padding: 4%;
 	margin-bottom: 5%;
+	border-radius: 10px;
+}
+
+.selected {
+	border-bottom-style: solid;
+}
+
+.anim
+{
+	animation-name: show;
+	animation-duration: 3s;
+}
+
+#topBtn
+{
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-color: rgb(40, 84, 48);
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	border-radius: 10px;
+	font-size: 2em;
+	border: 1px solid rgb(229, 217, 182);
+}
+
+#topBtn:hover
+{
+	color: gainsboro;
+}
+
+
+@keyframes show
+{
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes hide
+{
+	from
+	{
+		opacity: 1;
+	}
+
+	to
+	{
+		opacity: 0;
+	}
 }
