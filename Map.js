@@ -2,7 +2,7 @@ var map = L.map('map').setView([54.36546300831436, 18.60786893038252], 12);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
 
-var mech1Popup = '<img id="image" src="ulo.jpg" alt="mech"> <p>Szkola</p>';
+var mech1Popup = '<img id="image" src="ulo.jpg" alt="mech"> <p>Szkoła</p>';
 var mech2Popup = '<img id="image" src="stadion.jpg" alt="mech"> <p>Stadion</p>';
 
 // szkola

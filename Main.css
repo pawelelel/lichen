@@ -1,7 +1,11 @@
-﻿html, body
+﻿@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html, body
 {
+	font-family: 'Lato';
 	background: burlywood;
 	scroll-behavior: smooth;
+	line-height: 1.6;
 }
 
 header
@@ -60,6 +64,7 @@ img {
 .description {
 	text-align: left;
 	margin-left: 15px;
+	font-weight: normal;
 }
 
 #moss1 {
