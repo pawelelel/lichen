@@ -95,11 +95,11 @@ var scrollM = function scrollMosses() {
 
     return isVisible;
 }
-
+/*
 window.addEventListener("scroll", scrollU);
 window.addEventListener("scroll", scrollP);
 window.addEventListener("scroll", scrollM);
-
+*/
 
 var percentScroll = function percentScroll(element) {
     const elementBounds = element.getBoundingClientRect();
@@ -126,6 +126,13 @@ var selectedScroll = function selectedScroll()
     var project = percentScroll(document.getElementById('projectTile'));
     var us = percentScroll(document.getElementById('usTile'));
     var mosses = percentScroll(document.getElementById('mossesTile'));
+    
+    link = document.getElementById("projectTile");
+    link.style.opacity = project * 0.01;
+    link = document.getElementById("usTile");
+    link.style.opacity = us * 0.01;
+    link = document.getElementById("mossesTile");
+    link.style.opacity = mosses * 0.01;
 
     var max = Math.max(project, us, mosses);
 
