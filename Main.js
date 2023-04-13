@@ -71,10 +71,10 @@ var scrollP = function scrollProject() {
 
 let mVisible = false;
 
-var scrollM = function scrollMosses() {
-    var mosses = document.getElementById("mossesTile");
+var scrollM = function scrollLichens() {
+    var lichens = document.getElementById("lichensTile");
 
-    var rect = mosses.getBoundingClientRect();
+    var rect = lichens.getBoundingClientRect();
     var elemTop = rect.top;
     var elemBottom = rect.bottom;
 
@@ -84,11 +84,11 @@ var scrollM = function scrollMosses() {
     {
         if (isVisible === true)
         {
-            mosses.classList.add("anim");
+            lichens.classList.add("anim");
         }
         else
         {
-            mosses.classList.remove("anim");
+            lichens.classList.remove("anim");
         }
         mVisible = isVisible;
     }
@@ -118,23 +118,23 @@ var selectedScroll = function selectedScroll()
     link.classList.remove("selected");
     link = document.getElementById("usLink");
     link.classList.remove("selected");
-    link = document.getElementById("mossesLink");
+    link = document.getElementById("lichensLink");
     link.classList.remove("selected");
 
 
 
     var project = percentScroll(document.getElementById('projectTile'));
     var us = percentScroll(document.getElementById('usTile'));
-    var mosses = percentScroll(document.getElementById('mossesTile'));
+    var lichens = percentScroll(document.getElementById('lichensTile'));
     
     link = document.getElementById("projectTile");
     link.style.opacity = project * 0.01;
     link = document.getElementById("usTile");
     link.style.opacity = us * 0.01;
-    link = document.getElementById("mossesTile");
-    link.style.opacity = mosses * 0.01;
+    link = document.getElementById("lichensTile");
+    link.style.opacity = lichens * 0.01;
 
-    var max = Math.max(project, us, mosses);
+    var max = Math.max(project, us, lichens);
 
     if (project === max)
     {
@@ -146,9 +146,9 @@ var selectedScroll = function selectedScroll()
         link = document.getElementById("usLink");
         link.classList.add("selected");
     }
-    if (mosses === max)
+    if (lichens === max)
     {
-        link = document.getElementById("mossesLink");
+        link = document.getElementById("lichensLink");
         link.classList.add("selected");
     }
 }
