@@ -35,7 +35,27 @@
 
             <h1 id="Lichens">Poznaj nasze porosty</h1>
 
-            <table>
+            <!--
+        <div style="background-color: cadetblue; height: 50%">
+            <div style="float: left; width: 50%; display: inline">
+                <img style="width: 100% " src="ulo.jpg" />
+            </div>
+            <div style="width: 50%; display: inline">
+                <div style="width: 100%" class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae libero imperdiet, tristique risus vitae, porttitor magna. Mauris at lacus nec lorem fringilla mollis quis vitae nulla. Sed lobortis turpis at nisl auctor vehicula. Nunc a nulla risus. Nam interdum lacinia ligula, sit amet consequat eros ultrices id. Ut id turpis erat. Vestibulum egestas, lectus sed placerat luctus, nisi arcu euismod quam, et gravida nunc purus id lorem. Nunc nunc risus, ultrices et venenatis in, pretium nec felis. Sed ut nisi at dolor ultrices sollicitudin. In auctor ac odio sit amet finibus.</div>
+            </div>
+        </div>
+
+        <div style="background-color: greenyellow;">
+            <div style="float: left; width: 50%; display: inline">
+                <div style="width: 100%" class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae libero imperdiet, tristique risus vitae, porttitor magna. Mauris at lacus nec lorem fringilla mollis quis vitae nulla. Sed lobortis turpis at nisl auctor vehicula. Nunc a nulla risus. Nam interdum lacinia ligula, sit amet consequat eros ultrices id. Ut id turpis erat. Vestibulum egestas, lectus sed placerat luctus, nisi arcu euismod quam, et gravida nunc purus id lorem. Nunc nunc risus, ultrices et venenatis in, pretium nec felis. Sed ut nisi at dolor ultrices sollicitudin. In auctor ac odio sit amet finibus.</div>
+            </div>
+            <div style="width: 50%; display: inline">
+                <div style="width: 100%" class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae libero imperdiet, tristique risus vitae, porttitor magna. Mauris at lacus nec lorem fringilla mollis quis vitae nulla. Sed lobortis turpis at nisl auctor vehicula. Nunc a nulla risus. Nam interdum lacinia ligula, sit amet consequat eros ultrices id. Ut id turpis erat. Vestibulum egestas, lectus sed placerat luctus, nisi arcu euismod quam, et gravida nunc purus id lorem. Nunc nunc risus, ultrices et venenatis in, pretium nec felis. Sed ut nisi at dolor ultrices sollicitudin. In auctor ac odio sit amet finibus.</div>
+            </div>
+        </div>
+    -->
+
+            <table id="tableBig">
                 <tr>
                     <th><img src="ulo.jpg" /></th>
                     <th>
@@ -53,17 +73,42 @@
                     </th>
                 </tr>
             </table>
+
+            <table style="display: none" id="tableSmall">
+                <tr>
+                    <th>
+                        <img src="ulo.jpg" />
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae libero imperdiet, tristique risus vitae, porttitor magna. Mauris at lacus nec lorem fringilla mollis quis vitae nulla. Sed lobortis turpis at nisl auctor vehicula. Nunc a nulla risus. Nam interdum lacinia ligula, sit amet consequat eros ultrices id. Ut id turpis erat. Vestibulum egestas, lectus sed placerat luctus, nisi arcu euismod quam, et gravida nunc purus id lorem. Nunc nunc risus, ultrices et venenatis in, pretium nec felis. Sed ut nisi at dolor ultrices sollicitudin. In auctor ac odio sit amet finibus.
+                        </p>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="stadion.jpg" /></th>
+                </tr>
+                <tr>
+                    <th>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae libero imperdiet, tristique risus vitae, porttitor magna. Mauris at lacus nec lorem fringilla mollis quis vitae nulla. Sed lobortis turpis at nisl auctor vehicula. Nunc a nulla risus. Nam interdum lacinia ligula, sit amet consequat eros ultrices id. Ut id turpis erat. Vestibulum egestas, lectus sed placerat luctus, nisi arcu euismod quam, et gravida nunc purus id lorem. Nunc nunc risus, ultrices et venenatis in, pretium nec felis. Sed ut nisi at dolor ultrices sollicitudin. In auctor ac odio sit amet finibus.
+                        </p>
+                    </th>
+                </tr>
+            </table>
         </div>
-    </article>
-</div>
+        </article>
+    </div>
 
-<footer>
-    <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank">Strona zawiera informacje z Open Street Map, dostępnej tutaj na warunkach Open Database License (ODbL).</a><br />
-    <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank">Page contains information from Open Street Map, which is made available here under the Open Database License (ODbL).</a><br />
-    <a href="https://github.com/Leaflet/Leaflet" target="_blank">Strona zawiera informacje z Leaflet Js, dostępnej tutaj na warunkach Berkeley Software Distribution Licenses (BSD 2).</a><br />
-    <a href="https://github.com/Leaflet/Leaflet" target="_blank">Page contains information from Leaflet Js, which is made available here under the Berkeley Software Distribution Licenses (BSD 2).</a>
-</footer>
+    <footer>
+        <p><a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank">Strona zawiera informacje z Open Street Map, dostępnej tutaj na warunkach Open Database License (ODbL).</a></p>
+        <p><a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank">Page contains information from Open Street Map, which is made available here under the Open Database License (ODbL).</a></p>
+        <p><a href="https://github.com/Leaflet/Leaflet" target="_blank">Strona zawiera informacje z Leaflet Js, dostępnej tutaj na warunkach Berkeley Software Distribution Licenses (BSD 2).</a></p>
+        <p><a href="https://github.com/Leaflet/Leaflet" target="_blank">Page contains information from Leaflet Js, which is made available here under the Berkeley Software Distribution Licenses (BSD 2).</a></p>
+    </footer>
 
-<script src="Main.js"></script>
-</body>
-</html>
+    <script src="Main.js"></script>
+    </body>
+    </html>
