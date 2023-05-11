@@ -15,6 +15,92 @@ function goToTop() {
     document.documentElement.scrollTop = 0;
 }
 
+let uVisible = false;
+
+var scrollU = function scrollUs() {
+    var us = document.getElementById("usTile");
+
+    var rect = us.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    
+    if (isVisible != uVisible)
+    {
+        if (isVisible === true)
+        {
+            us.classList.add("anim");
+        }
+        else
+        {
+            us.classList.remove("anim");
+        }
+        uVisible = isVisible;
+    }
+
+    return isVisible;
+}
+
+let pVisible = true;
+
+var scrollP = function scrollProject() {
+    var project = document.getElementById("projectTile");
+
+    var rect = project.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    var isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+
+    if (isVisible != pVisible)
+    {
+        if (isVisible === true)
+        {
+            project.classList.add("anim");
+        }
+        else
+        {
+            project.classList.remove("anim");
+        }
+        pVisible = isVisible;
+    }
+
+    return isVisible;
+}
+
+let mVisible = false;
+
+var scrollM = function scrollLichens() {
+    var lichens = document.getElementById("lichensTile");
+
+    var rect = lichens.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+
+    if (isVisible != mVisible)
+    {
+        if (isVisible === true)
+        {
+            lichens.classList.add("anim");
+        }
+        else
+        {
+            lichens.classList.remove("anim");
+        }
+        mVisible = isVisible;
+    }
+
+    return isVisible;
+}
+/*
+window.addEventListener("scroll", scrollU);
+window.addEventListener("scroll", scrollP);
+window.addEventListener("scroll", scrollM);
+*/
+
 var percentScroll = function percentScroll(element) {
     const elementBounds = element.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
@@ -34,6 +120,8 @@ var selectedScroll = function selectedScroll()
     link.classList.remove("selected");
     link = document.getElementById("lichensLink");
     link.classList.remove("selected");
+
+
 
     var project = percentScroll(document.getElementById('projectTile'));
     var us = percentScroll(document.getElementById('usTile'));
@@ -66,19 +154,5 @@ var selectedScroll = function selectedScroll()
 }
 window.addEventListener("scroll", selectedScroll);
 
-const big = document.querySelector("#tableBig");
-const small = document.querySelector("#tableSmall");
-
-function reportWindowSize() {
-    console.log(window.innerWidth);
-    if (window.innerWidth < 1200) {
-        big.style.display = "none";
-        small.style.display = "block";
-    }
-    else {
-        small.style.display = "none";
-        big.style.display = "block";
-    }
-}
-
-window.onresize = reportWindowSize;
+//const element = document.getElementById('projectTile');
+//window.addEventListener("scroll", (evt) => percentScroll(element));
