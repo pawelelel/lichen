@@ -3,7 +3,7 @@
 html, body
 {
 	font-family: 'Lato';
-	background: rgb(229, 217, 182);
+	background: #E5D9B6;
 	scroll-behavior: smooth;
 	text-align: center;
 }
@@ -56,6 +56,7 @@ header a:not(:hover)
 	border-radius: 22px;
 	font-size: 2em;
 	border: 1px solid #E5D9B6;
+	z-index: 1000;
 }
 
 #topBtn:hover div
@@ -71,6 +72,22 @@ header a:not(:hover)
 	transition-duration: 0.5s;
 }
 
+footer
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: #5F8D4E;
+	color: white;
+	padding: 1%;
+}
+
+footer > a
+{
+	font-size: 1em;
+	color: white;
+}
+
 /*
 article {
 	margin-top: 5%;
@@ -82,18 +99,7 @@ h1
 	font-size: 2em
 }
 
-footer
-{
-	background-color: rgb(40, 84, 48);
-	color: white;
-	padding: 1%;
-	margin: 1em;
-}
 
-footer > a
-{
-	font-size: 1em;
-}
 
 #content {
 	padding-left: 17%;
