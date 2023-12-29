@@ -1,36 +1,77 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 html, body
 {
 	font-family: 'Lato';
 	background: rgb(229, 217, 182);
 	scroll-behavior: smooth;
-	line-height: 1.6;
+	text-align: center;
 }
 
 header
 {
 	position: sticky;
 	top: 10px;
-	background: rgb(40, 84, 48);
-	text-align: center;
-	padding: 0.5em;
-	margin: 1em;
+	margin: auto;
+	background: #5F8D4E;
+	width: calc(100% * 0.9);
 	z-index: 100;
+	border-radius: 22px;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
 }
 
-a {
+header a {
 	color: white;
 	text-decoration: none;
 	font-size: 2em;
-	margin: 1em;
 }
 
-a:hover
+header a:hover
 {
-	color: gainsboro;
+	color: #E5D9B6;
+	transform: translateY(-8px);
+	transition-duration: 0.5s;
 }
 
+header a:not(:hover)
+{
+	transform: translateY(-2px);
+	transition-duration: 0.5s;
+}
+
+#topBtn
+{
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: calc(100% * 0.055);
+	width: 2em;
+	height: 2em;
+	background-color: #5F8D4E;
+	color: white;
+	cursor: pointer;
+	border-radius: 22px;
+	font-size: 2em;
+	border: 1px solid #E5D9B6;
+}
+
+#topBtn:hover div
+{
+	color: #E5D9B6;
+	transform: translateY(-10px);
+	transition-duration: 0.5s;
+}
+
+#topBtn:not(:hover) div
+{
+	transform: translateY(-3px);
+	transition-duration: 0.5s;
+}
+
+/*
 article {
 	margin-top: 5%;
 }
@@ -88,26 +129,9 @@ img {
 	animation-duration: 3s;
 }
 
-#topBtn
-{
-	display: none;
-	position: fixed;
-	bottom: 30px;
-	right: 30px;
-	background-color: rgb(40, 84, 48);
-	padding: 10px 20px 10px 20px;
-	text-align: center;
-	color: white;
-	cursor: pointer;
-	border-radius: 10px;
-	font-size: 2em;
-	border: 1px solid rgb(229, 217, 182);
-}
 
-#topBtn:hover
-{
-	color: gainsboro;
-}
+*/
+
 /*
 
 @keyframes show
