@@ -88,10 +88,10 @@ footer > a
 	color: white;
 }
 
-
 article {
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
+	overflow: hidden;
 }
 
 .tile
@@ -115,13 +115,6 @@ p
 {
 	color: #285430;
 	text-align: justify;
-}
-
-#photos
-{
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-bottom: 2%;
 }
 
 .photo
@@ -152,10 +145,38 @@ p
 	text-align: justify;
 }
 
+.photoContent a
+{
+	color: #285430;
+}
+
+.photoContent a :hover
+{
+	color: #A4BE7B;
+}
+
+.photoContent a :visited
+{
+	color: #285430;
+}
+
 img
 {
 	float: left;
 	width: 50%;
 	border-radius: 22px;
 	margin: 0 2em 1em 0;
+}
+
+.hidden
+{
+	opacity: 0;
+	transform: translateX(100%);
+	transition: 2s;
+}
+
+.show
+{
+	transform: translateX(0);
+	opacity: 1;
 }
