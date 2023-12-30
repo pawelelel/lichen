@@ -3,6 +3,12 @@
 p
 {
 	font-family: 'Lato';
+	color: #285430;
+}
+
+a
+{
+	color: #285430 !important;
 }
 
 #map {
@@ -15,4 +21,5 @@ p
 
 #image {
 	max-height: 100px;
+	border-radius: 5px;
 }
