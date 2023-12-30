@@ -42,6 +42,11 @@ header a:not(:hover)
 	transition-duration: 0.5s;
 }
 
+.scroll
+{
+	scroll-margin-top: 80px;
+}
+
 #topBtn
 {
 	display: none;
@@ -71,6 +76,22 @@ header a:not(:hover)
 	transform: translateY(0);
 	transition-duration: 0.5s;
 }
+/*
+#nav
+{
+	position: fixed;
+	top: 100px;
+	right: 20px;
+	background-color: #5F8D4E;
+	border-radius: 22px;
+}
+
+#nav a
+{
+	display: block;
+	color: white;
+	margin: 1em;
+}*/
 
 footer
 {
@@ -108,7 +129,7 @@ article {
 h1
 {
 	color: #285430;
-	font-size: 2em
+	font-size: 3em
 }
 
 p
