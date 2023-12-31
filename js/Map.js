@@ -2,25 +2,25 @@ var map = L.map('map').setView([54.353209, 18.677362], 12);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
 
-var mech6Popup = '<img id="image" src="photos/6.jpg" alt="porost"> <p>porost6</p> <a href="Main.html#porost6">Dowiedz się więcej...</a>';
-var mech7Popup = '<img id="image" src="photos/7.jpg" alt="porost"> <p>porost7</p> <a href="Main.html#porost7">Dowiedz się więcej...</a>';
-var mech8Popup = '<img id="image" src="photos/8.jpg" alt="porost"> <p>porost8</p> <a href="Main.html#porost8">Dowiedz się więcej...</a>';
-var mech9Popup = '<img id="image" src="photos/9.jpg" alt="porost"> <p>porost9</p> <a href="Main.html#porost9">Dowiedz się więcej...</a>';
-var mech10Popup = '<img id="image" src="photos/10.jpg" alt="porost"> <p>porost10</p> <a href="Main.html#porost10">Dowiedz się więcej...</a>';
-var mech11Popup = '<img id="image" src="photos/11.jpg" alt="porost"> <p>porost11</p> <a href="Main.html#porost11">Dowiedz się więcej...</a>';
-var mech12Popup = '<img id="image" src="photos/12.jpg" alt="porost"> <p>porost12</p> <a href="Main.html#porost12">Dowiedz się więcej...</a>';
-var mech13Popup = '<img id="image" src="photos/13.jpg" alt="porost"> <p>porost13</p> <a href="Main.html#porost13">Dowiedz się więcej...</a>';
-var mech14Popup = '<img id="image" src="photos/14.jpg" alt="porost"> <p>porost14</p> <a href="Main.html#porost14">Dowiedz się więcej...</a>';
-var mech15Popup = '<img id="image" src="photos/15.jpg" alt="porost"> <p>porost15</p> <a href="Main.html#porost15">Dowiedz się więcej...</a>';
-var mech16Popup = '<img id="image" src="photos/16.jpg" alt="porost"> <p>porost16</p> <a href="Main.html#porost16">Dowiedz się więcej...</a>';
-var mech17Popup = '<img id="image" src="photos/17.jpg" alt="porost"> <p>porost17</p> <a href="Main.html#porost17">Dowiedz się więcej...</a>';
-var mech18Popup = '<img id="image" src="photos/18.jpg" alt="porost"> <p>porost18</p> <a href="Main.html#porost18">Dowiedz się więcej...</a>';
-var mech19Popup = '<img id="image" src="photos/19.jpg" alt="porost"> <p>porost19</p> <a href="Main.html#porost19">Dowiedz się więcej...</a>';
-var mech20Popup = '<img id="image" src="photos/20.jpg" alt="porost"> <p>porost20</p> <a href="Main.html#porost20">Dowiedz się więcej...</a>';
-var mech21Popup = '<img id="image" src="photos/21.jpg" alt="porost"> <p>porost21</p> <a href="Main.html#porost21">Dowiedz się więcej...</a>';
-var mech22Popup = '<img id="image" src="photos/22.jpg" alt="porost"> <p>porost22</p> <a href="Main.html#porost22">Dowiedz się więcej...</a>';
-var mech23Popup = '<img id="image" src="photos/23.jpg" alt="porost"> <p>porost23</p> <a href="Main.html#porost23">Dowiedz się więcej...</a>';
-var mech24Popup = '<img id="image" src="photos/24.jpg" alt="porost"> <p>porost24</p> <a href="Main.html#porost24">Dowiedz się więcej...</a>';
+var mech6Popup = '<img id="image" src="photos/6.jpg" alt="porost"> <p>porost6</p> <a href="index.html#porost6" target="lichen">Dowiedz się więcej...</a>';
+var mech7Popup = '<img id="image" src="photos/7.jpg" alt="porost"> <p>porost7</p> <a href="index.html#porost7" target="lichen">Dowiedz się więcej...</a>';
+var mech8Popup = '<img id="image" src="photos/8.jpg" alt="porost"> <p>porost8</p> <a href="index.html#porost8" target="lichen">Dowiedz się więcej...</a>';
+var mech9Popup = '<img id="image" src="photos/9.jpg" alt="porost"> <p>porost9</p> <a href="index.html#porost9" target="lichen">Dowiedz się więcej...</a>';
+var mech10Popup = '<img id="image" src="photos/10.jpg" alt="porost"> <p>porost10</p> <a href="index.html#porost10" target="lichen">Dowiedz się więcej...</a>';
+var mech11Popup = '<img id="image" src="photos/11.jpg" alt="porost"> <p>porost11</p> <a href="index.html#porost11" target="lichen">Dowiedz się więcej...</a>';
+var mech12Popup = '<img id="image" src="photos/12.jpg" alt="porost"> <p>porost12</p> <a href="index.html#porost12" target="lichen">Dowiedz się więcej...</a>';
+var mech13Popup = '<img id="image" src="photos/13.jpg" alt="porost"> <p>porost13</p> <a href="index.html#porost13" target="lichen">Dowiedz się więcej...</a>';
+var mech14Popup = '<img id="image" src="photos/14.jpg" alt="porost"> <p>porost14</p> <a href="index.html#porost14" target="lichen">Dowiedz się więcej...</a>';
+var mech15Popup = '<img id="image" src="photos/15.jpg" alt="porost"> <p>porost15</p> <a href="index.html#porost15" target="lichen">Dowiedz się więcej...</a>';
+var mech16Popup = '<img id="image" src="photos/16.jpg" alt="porost"> <p>porost16</p> <a href="index.html#porost16" target="lichen">Dowiedz się więcej...</a>';
+var mech17Popup = '<img id="image" src="photos/17.jpg" alt="porost"> <p>porost17</p> <a href="index.html#porost17" target="lichen">Dowiedz się więcej...</a>';
+var mech18Popup = '<img id="image" src="photos/18.jpg" alt="porost"> <p>porost18</p> <a href="index.html#porost18" target="lichen">Dowiedz się więcej...</a>';
+var mech19Popup = '<img id="image" src="photos/19.jpg" alt="porost"> <p>porost19</p> <a href="index.html#porost19" target="lichen">Dowiedz się więcej...</a>';
+var mech20Popup = '<img id="image" src="photos/20.jpg" alt="porost"> <p>porost20</p> <a href="index.html#porost20" target="lichen">Dowiedz się więcej...</a>';
+var mech21Popup = '<img id="image" src="photos/21.jpg" alt="porost"> <p>porost21</p> <a href="index.html#porost21" target="lichen">Dowiedz się więcej...</a>';
+var mech22Popup = '<img id="image" src="photos/22.jpg" alt="porost"> <p>porost22</p> <a href="index.html#porost22" target="lichen">Dowiedz się więcej...</a>';
+var mech23Popup = '<img id="image" src="photos/23.jpg" alt="porost"> <p>porost23</p> <a href="index.html#porost23" target="lichen">Dowiedz się więcej...</a>';
+var mech24Popup = '<img id="image" src="photos/24.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost24" target="lichen">Dowiedz się więcej...</a>';
 
 var mech6 = L.marker([54.38398, 18.57194],
 	{ alt: 'porost6' }).addTo(map)
@@ -201,3 +201,7 @@ switch (text) {
 		break;
 	}
 }
+
+document.addEventListener("visibilitychange", function(){
+	location.reload(true);
+})

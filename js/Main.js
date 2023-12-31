@@ -1,4 +1,5 @@
 document.documentElement.scrollTop = 0;
+window.name = "lichen"
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
