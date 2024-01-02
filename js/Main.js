@@ -30,3 +30,7 @@ function scrollFunction() {
 function goToTop() {
     document.documentElement.scrollTop = 0;
 }
+/*
+document.addEventListener("visibilitychange", function(){
+    location.reload(true);
+})*/

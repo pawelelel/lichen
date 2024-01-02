@@ -21,6 +21,21 @@ var mech21Popup = '<img id="image" src="photos/21.jpg" alt="porost"> <p>porost21
 var mech22Popup = '<img id="image" src="photos/22.jpg" alt="porost"> <p>porost22</p> <a href="index.html#porost22" target="lichen">Dowiedz się więcej...</a>';
 var mech23Popup = '<img id="image" src="photos/23.jpg" alt="porost"> <p>porost23</p> <a href="index.html#porost23" target="lichen">Dowiedz się więcej...</a>';
 var mech24Popup = '<img id="image" src="photos/24.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost24" target="lichen">Dowiedz się więcej...</a>';
+var mech25Popup = '<img id="image" src="photos/25.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost25" target="lichen">Dowiedz się więcej...</a>';
+var mech26Popup = '<img id="image" src="photos/26.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost26" target="lichen">Dowiedz się więcej...</a>';
+var mech27Popup = '<img id="image" src="photos/27.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost27" target="lichen">Dowiedz się więcej...</a>';
+var mech28Popup = '<img id="image" src="photos/28.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost28" target="lichen">Dowiedz się więcej...</a>';
+var mech29Popup = '<img id="image" src="photos/29.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost29" target="lichen">Dowiedz się więcej...</a>';
+var mech30Popup = '<img id="image" src="photos/30.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost30" target="lichen">Dowiedz się więcej...</a>';
+var mech31Popup = '<img id="image" src="photos/31.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost31" target="lichen">Dowiedz się więcej...</a>';
+var mech32Popup = '<img id="image" src="photos/32.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost32" target="lichen">Dowiedz się więcej...</a>';
+var mech33Popup = '<img id="image" src="photos/33.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost33" target="lichen">Dowiedz się więcej...</a>';
+var mech34Popup = '<img id="image" src="photos/34.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost34" target="lichen">Dowiedz się więcej...</a>';
+var mech35Popup = '<img id="image" src="photos/35.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost35" target="lichen">Dowiedz się więcej...</a>';
+var mech36Popup = '<img id="image" src="photos/36.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost36" target="lichen">Dowiedz się więcej...</a>';
+var mech37Popup = '<img id="image" src="photos/37.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost37" target="lichen">Dowiedz się więcej...</a>';
+var mech38Popup = '<img id="image" src="photos/38.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost38" target="lichen">Dowiedz się więcej...</a>';
+var mech39Popup = '<img id="image" src="photos/39.jpg" alt="porost"> <p>porost24</p> <a href="index.html#porost39" target="lichen">Dowiedz się więcej...</a>';
 
 var mech6 = L.marker([54.38398, 18.57194],
 	{ alt: 'porost6' }).addTo(map)
@@ -98,6 +113,65 @@ var mech24 = L.marker([54.4036899, 18.6119908],
 	{ alt: 'porost24' }).addTo(map)
 	.bindPopup(mech24Popup);
 
+var mech25 = L.marker([54.383051, 18.574293],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech26 = L.marker([54.383122, 18.574126],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech27 = L.marker([54.383774, 18.574916],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech28 = L.marker([54.383935, 18.575347],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech29 = L.marker([54.384662, 18.573741],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech30 = L.marker([54.383633, 18.571400],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech31 = L.marker([54.383640, 18.569796],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech32 = L.marker([54.383788, 18.569139],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech33 = L.marker([54.384352, 18.569379],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech34 = L.marker([54.384429, 18.569574],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech35 = L.marker([54.385063, 18.572509],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech36 = L.marker([54.385397, 18.573801],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech37 = L.marker([54.385157, 18.575270],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech38 = L.marker([54.385209, 18.575396],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
+
+var mech39 = L.marker([54.385103, 18.577584],
+	{ alt: 'porost24' }).addTo(map)
+	.bindPopup(mech24Popup);
 
 var text = window.location.hash.substring(1);
 switch (text) {
@@ -198,6 +272,81 @@ switch (text) {
 	case '24':
 	{
 		mech24.openPopup();
+		break;
+	}
+	case '25':
+	{
+		mech25.openPopup();
+		break;
+	}
+	case '26':
+	{
+		mech26.openPopup();
+		break;
+	}
+	case '27':
+	{
+		mech27.openPopup();
+		break;
+	}
+	case '28':
+	{
+		mech28.openPopup();
+		break;
+	}
+	case '29':
+	{
+		mech29.openPopup();
+		break;
+	}
+	case '30':
+	{
+		mech30.openPopup();
+		break;
+	}
+	case '31':
+	{
+		mech31.openPopup();
+		break;
+	}
+	case '32':
+	{
+		mech32.openPopup();
+		break;
+	}
+	case '33':
+	{
+		mech33.openPopup();
+		break;
+	}
+	case '34':
+	{
+		mech34.openPopup();
+		break;
+	}
+	case '35':
+	{
+		mech35.openPopup();
+		break;
+	}
+	case '36':
+	{
+		mech36.openPopup();
+		break;
+	}
+	case '37':
+	{
+		mech37.openPopup();
+		break;
+	}
+	case '38':
+	{
+		mech38.openPopup();
+		break;
+	}
+	case '39':
+	{
+		mech39.openPopup();
 		break;
 	}
 }
