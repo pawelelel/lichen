@@ -47,6 +47,16 @@ header a:not(:hover)
 	scroll-margin-top: 80px;
 }
 
+#projectTile img
+{
+	float: none;
+}
+
+h2
+{
+	color: #285430;
+}
+
 #topBtn
 {
 	display: none;
@@ -129,7 +139,8 @@ article {
 h1
 {
 	color: #285430;
-	font-size: 3em
+	font-size: 3em;
+	margin-bottom: 0;
 }
 
 p
@@ -187,6 +198,12 @@ img
 	width: 50%;
 	border-radius: 22px;
 	margin: 0 2em 1em 0;
+}
+
+i
+{
+	font-size: 1.5em;
+	color: #285430;
 }
 
 .hidden
