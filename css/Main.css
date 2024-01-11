@@ -47,6 +47,16 @@ header a:not(:hover)
 	scroll-margin-top: 80px;
 }
 
+#projectTile img
+{
+	float: none;
+}
+
+h2
+{
+	color: #285430;
+}
+
 #topBtn
 {
 	display: none;
