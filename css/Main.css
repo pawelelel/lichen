@@ -6,6 +6,7 @@ html, body
 	background: #E5D9B6;
 	scroll-behavior: smooth;
 	text-align: center;
+	margin: 0;
 }
 
 header
@@ -50,6 +51,9 @@ header a:not(:hover)
 #projectTile img
 {
 	float: none;
+	margin: 0;
+	border-radius: 0;
+	width: 100%;
 }
 
 h2
@@ -217,4 +221,79 @@ i
 {
 	/*transform: translateX(0);*/
 	opacity: 1;
+}
+
+#logo {
+	display: none;
+}
+
+@media only screen and (max-width: 1414px){
+	.pustulka {
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 1015px){
+	.img {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 1162px){
+	.gwiazda {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 1156px){
+	.tarczownica {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 975px){
+	.small {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 650px){
+	h1 {
+		font-size: 2em;
+	}
+	i {
+		font-size: 1em;
+	}
+	header a {
+		display: none;
+	}
+	article {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	header {
+		text-align: right;
+	}
+	#logo {
+		display: inline;
+		border-radius: 5px;
+		margin: 0;
+		width: 10%;
+		transform: translateX(-150%);
+	}
+	#hamburger {
+		background-color: #5F8D4E;
+		display: unset;
+		width: 10%;
+		transform: translateX(150%);
+	}
+	#hamburger div {
+		background-color: white;
+		color: white;
+		height: 14%;
+		margin: 14%;
+		border-radius: 22px;
+	}
 }

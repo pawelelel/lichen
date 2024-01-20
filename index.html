@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width">
     <title>Porosty</title>
     <link type="text/css" rel="stylesheet" href="css/Main.css" />
+    <link rel="icon" type="image/x-icon" href="logo/logo.ico"/>
 </head>
 <body id="html">
 
 <header>
-    <a id="projectLink" href="#projectTile">Porosty</a>
-    <a id="usLink" href="#usTile">Wpływ zanieczyszczeń na zdrowie</a>
-    <a id="lichensLink"href="#Lichens">Poznaj nasze porosty</a>
+    <img id="logo" src="logo/logo.ico" alt="logo">
+    <a id="projectLink" href="#projectTile">Naturalne bioindykatory</a>
+    <a id="lichensLink"href="#Lichens">Porosty</a>
     <a href="Map.html#" target="lichenMap">Mapa</a>
+    <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </header>
 
 <button onclick="goToTop()" id="topBtn"><div>&UpArrow;</div></button>
@@ -43,13 +49,6 @@
         <p>ORGANIZM O WĄSKIEJ AMPLITUDZIE EKOLOGICZNEJ, WRAŻLIWY NA NADMIAR LUB BRAK OKREŚLONEGO SKŁADNIKA W SIEDLISKU LUB ZDOLNY DO AKUMULOWANIA SUBSTANCJI TOKSYCZNEJ FRAGMENTACJA PLECHY</p>
     </div>
 
-    <div class="tile hidden scroll" id="usTile">
-        <h1 id="Us">Wpływ zanieczyszczeń na zdrowie</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae libero imperdiet, tristique risus vitae, porttitor magna. Mauris at lacus nec lorem fringilla mollis quis vitae nulla. Sed lobortis turpis at nisl auctor vehicula. Nunc a nulla risus. Nam interdum lacinia ligula, sit amet consequat eros ultrices id. Ut id turpis erat. Vestibulum egestas, lectus sed placerat luctus, nisi arcu euismod quam, et gravida nunc purus id lorem. Nunc nunc risus, ultrices et venenatis in, pretium nec felis. Sed ut nisi at dolor ultrices sollicitudin. In auctor ac odio sit amet finibus. Praesent eget ex vitae tortor dictum ultricies eu id risus. Morbi dapibus in velit in blandit. Donec in nulla vel nisi tincidunt maximus. In hac habitasse platea dictumst. Aenean mauris dolor, faucibus et varius non, ornare sit amet tellus. Donec congue, sapien ut luctus lacinia, leo est tempor erat, in scelerisque risus ex imperdiet ante. Proin ornare quam a auctor vulputate. Pellentesque elementum felis sit amet ligula vulputate, pharetra faucibus tellus vestibulum. Ut eleifend porttitor orci, a rutrum diam fermentum sit amet. Mauris hendrerit nisi in odio rhoncus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In pellentesque et nulla id vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec sit amet quam eros. Sed eros arcu, condimentum vitae nunc eget, consectetur consequat nisi. Nam placerat nunc a laoreet tempus.            In ac dui eu massa pellentesque porttitor. Morbi vulputate semper porttitor. Phasellus vitae posuere quam. Fusce pretium dapibus venenatis. Sed et risus gravida, tempus nisl vel, auctor dolor. Aenean et tincidunt velit. Donec tempor erat vitae blandit accumsan. Pellentesque sollicitudin, libero id egestas condimentum, orci odio consectetur lorem, et accumsan turpis ex sed risus. Pellentesque venenatis ipsum ut purus euismod, et vestibulum tellus mollis. Duis dui risus, tempor quis fringilla non, viverra ut diam. Sed pharetra rhoncus accumsan. Nulla mattis vehicula congue. Sed vel ex tincidunt leo tempus lacinia ut sed velit. Nunc vel vehicula purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        </p>
-    </div>
-    
     <h1 class="hidden scroll" id="Lichens">Poznaj nasze porosty</h1>
     
     <div>
@@ -126,7 +125,7 @@
     
     <div id="porost11" class="photo hidden scroll">
         <div class="photoContent">
-            <img class="img" src="low-resPhotos/11.jpg" alt="Pustułka pęcherzykowata">
+            <img class="img pustulka" src="low-resPhotos/11.jpg" alt="Pustułka pęcherzykowata">
             <h1>Pustułka pęcherzykowata</h1>
             <i>Hypogymnia physodes</i>
             <br>
@@ -208,7 +207,7 @@
     
     <div id="porost17" class="photo hidden scroll">
         <div class="photoContent">
-           <img class="img" src="low-resPhotos/17.jpg" alt="Pustułka pęcherzykowata">
+           <img class="img pustulka" src="low-resPhotos/17.jpg" alt="Pustułka pęcherzykowata">
             <h1>Pustułka pęcherzykowata</h1>
             <i>Hypogymnia physodes</i>
             <br>
@@ -223,7 +222,7 @@
     
     <div id="porost18" class="photo hidden scroll">
         <div class="photoContent">
-            <img class="img" src="low-resPhotos/18.jpg" alt="Chrobotek gwiazdowaty">
+            <img class="img gwiazda small" src="low-resPhotos/18.jpg" alt="Chrobotek gwiazdowaty">
             <h1>Chrobotek gwiazdowaty</h1>
             <i>Cladonia uncialis</i>
             <br>
@@ -237,7 +236,7 @@
     
     <div id="porost19" class="photo hidden scroll">
         <div class="photoContent">
-           <img class="img" src="low-resPhotos/19.jpg" alt="Tarczownica bruzdkowata">
+           <img class="img tarczownica small" src="low-resPhotos/19.jpg" alt="Tarczownica bruzdkowata">
             <h1>Tarczownica bruzdkowata</h1>
             <i>Parmelia sulcata Taylor</i>
             <br>
@@ -343,7 +342,7 @@
     
     <div id="porost26" class="photo hidden scroll">
         <div class="photoContent">
-            <img class="img" src="low-resPhotos/26.jpg" alt="Pustułka pęcherzykowata">
+            <img class="img pustulka" src="low-resPhotos/26.jpg" alt="Pustułka pęcherzykowata">
             <h1>Pustułka pęcherzykowata</h1>
             <i>Hypogymnia physodes</i>
             <br>
@@ -373,7 +372,7 @@
     
     <div id="porost28" class="photo hidden scroll">
         <div class="photoContent">
-            <img class="img" src="low-resPhotos/28.jpg" alt="Tarczownica bruzdkowata">
+            <img class="img tarczownica small" src="low-resPhotos/28.jpg" alt="Tarczownica bruzdkowata">
             <h1>Tarczownica bruzdkowata</h1>
             <i>Parmelia sulcata Taylor</i>
             <br>
@@ -552,7 +551,6 @@
     </div>
 </div>
 </article>
-
 
 <footer>
     <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank">Strona zawiera informacje z Open Street Map, dostępnej tutaj na warunkach Open Database License (ODbL).</a><br />
