@@ -137,6 +137,11 @@ p
 	text-align: justify;
 }
 
+.biophoto
+{
+	width: 50% !important;
+}
+
 .photo
 {
 	margin-top: 5%;
