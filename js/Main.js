@@ -31,6 +31,43 @@ function goToTop() {
     document.documentElement.scrollTop = 0;
 }
 
+let menu = true;
+let h = document.getElementById("hamburger");
+let div1 = document.getElementById("1");
+let div2 = document.getElementById("2");
+let div3 = document.getElementById("3");
+let m = document.getElementById("menu");
+h.addEventListener("click", (event) => {
+    if (menu){
+        div1.classList.remove("anim1Ret");
+        div2.classList.remove("anim2Ret");
+        div3.classList.remove("anim3Ret");
+        div1.classList.add("anim1");
+        div2.classList.add("anim2");
+        div3.classList.add("anim3");
+        menu = false;
+
+        m.classList.remove("menuAnimRet");
+        m.classList.add("menuAnim");
+    }
+    else {
+        div1.classList.remove("anim1");
+        div2.classList.remove("anim2");
+        div3.classList.remove("anim3");
+        div1.classList.add("anim1Ret");
+        div2.classList.add("anim2Ret");
+        div3.classList.add("anim3Ret");
+        menu = true;
+
+        m.classList.remove("menuAnim");
+        m.classList.add("menuAnimRet");
+    }
+});
+
+/*
+
+preload images jak sie zaladuje low res to potem podmeniam na photos
+
 var images = [];
 function preloadImages(){
     for (var i = 6; i <= 39; i++){
@@ -38,12 +75,6 @@ function preloadImages(){
         images[i].src = window.location.origin + '/photos/' + i + '.jpg';
     }
 }
-
-
-
-/*
-
-preload images jak sie zaladuje low res to potem podmeniam na photos
 
 preloadImages()
 
